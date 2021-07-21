@@ -6,11 +6,11 @@ body {
 }
 
 .header {
+    /* border-color: black;
+    border-style: dashed; */
     padding: 1em;
     margin: 10px 10px 25px 10px;
     border-width: 2px;
-    /* border-color: black;
-    border-style: dashed; */
     text-align: center;
 }
 
@@ -23,6 +23,8 @@ body {
 }
 
 .emptyleft {
+    /* border-color: black;
+    border-style: dashed; */
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -30,6 +32,8 @@ body {
 }
 
 .emptyright {
+    /* border-color: black;
+    border-style: dashed; */
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -37,17 +41,19 @@ body {
 }
 
 .celldivider {
+    /* border-style: dashed;
+    border-width: 2px; */
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
     padding: 1em;
-    /* border-style: dashed;
-    border-width: 2px; */
     margin: 5px 0px 5px 0px;
 }
 
 .date {
+    /* border-color: black;
+    border-style: dashed; */
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 2;
@@ -55,6 +61,8 @@ body {
 }
 
 .time {
+    /* border-color: black;
+    border-style: dashed; */
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 2;
@@ -64,6 +72,8 @@ body {
 /* Content Styling */
 
 .date {
+    /* border-color: black;
+    border-style: dashed; */
     display: flex;
     justify-content: center;
     padding: 10px 0px 10px 0px;
@@ -71,6 +81,8 @@ body {
 }
 
 .time {
+    /* border-color: black;
+    border-style: dashed; */
     display: flex;
     justify-content: center;
     padding: 10px 0px 10px 0px;
