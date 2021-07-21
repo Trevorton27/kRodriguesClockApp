@@ -7,17 +7,17 @@ Header (span width)
 
 --------------------------------------------------------------------------
 
-Empty Grid Block -> 
+Empty Grid Column ->
+ 
 	Date Block ->
 		Day Div/Month Div/Year Div Flex Row ->
-Empty Grid Block
 
 Line Break
 
-Empty Grid Block -> 
 	Time Block ->
 		Hour Div/Minute Div/Second Div Flex Row -> 
-Empty Grid Block
+
+Empty Grid Column
 
 --------------------------------------------------------------------------
 
