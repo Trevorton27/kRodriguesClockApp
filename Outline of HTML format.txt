@@ -1,0 +1,40 @@
+Clock App HTML Outline:
+
+--------------------------------------------------------------------------
+
+Header (span width)
+	Title
+
+--------------------------------------------------------------------------
+
+Empty Grid Block -> 
+	Date Block ->
+		/* Day Div/Month Div/Year Div Flex Row */ ->
+Empty Grid Block
+
+Line Break
+
+Empty Grid Block -> 
+	Time Block ->
+		/* Hour Div/Minute Div/Second Div Flex Row */ -> 
+Empty Grid Block
+
+--------------------------------------------------------------------------
+
+Algorithm:
+
+Function - Second - Value stored in variable ("second")
+	second starting value - 00
+		Increment second by 1
+			When Second reaches 60, restart at 00
+
+Function - Minute - Value stored in variable ("minute")
+	minute starting value - 00
+		increment minute by 1 when second value is 00
+			When minute value reaches 60, restart at 00
+
+Function - Hour - Value stored in variable ("hour")
+	hour starting value - 12
+		increment hour by 1 when minute value is 00
+			When hour value reaches 11 and minute value reaches 			60, restart hour at 12
+			
