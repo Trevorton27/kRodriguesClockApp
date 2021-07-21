@@ -36,5 +36,5 @@ Function - Minute - Value stored in variable ("minute")
 Function - Hour - Value stored in variable ("hour")
 	hour starting value - 12
 		increment hour by 1 when minute value is 00
-			When hour value reaches 11 and minute value reaches 			60, restart hour at 12
+			When hour value reaches 11 and minute value reaches 	60, restart hour at 12
 			
