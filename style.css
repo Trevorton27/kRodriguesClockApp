@@ -3,7 +3,6 @@
 body {
     margin: 0px;
     padding:0px;
-    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fmocah.org%2F5405063-mountain-peak-night-dusk-star-sky-wallpaper-desktop-wallpapers-nature-wallpapers-desktop-background-desktop-backgrounds-wallpapers-amazing-wallpaper-nature-backgrounds-snow-sunrise-landscape.html&psig=AOvVaw2CGGrY0_tcO29_Q699P52q&ust=1627172275687000&source=images&cd=vfe&ved=0CAcQjRxqFwoTCKiI2Z23-vECFQAAAAAdAAAAABAM);
 }
 
 .header {
@@ -88,4 +87,16 @@ body {
     justify-content: center;
     padding: 10px 0px 10px 0px;
     font-size: 2em;
+}
+
+#hours {
+    margin: 0px 10px 0px 0px;
+}
+
+#minutes {
+    margin: 0px 10px 0px 10px;
+}
+
+#seconds {
+    margin: 0px 0px 0px 10px;
 }

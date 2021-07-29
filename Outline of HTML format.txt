@@ -35,4 +35,27 @@ Function - "Hour" - Value stored in variable ("hour")
 	hour starting value - 12
 		increment hour by 1 when minute value is 00
 			When hour value reaches 11 and minute value reaches 	60, restart hour at 12
-			
+
+--------------------------------------------------------------------------
+
+Javascript Pseudocode:
+
+variable = second
+variable = minute
+variable = hour
+
+second = 00
+second++
+While second is less than 60, increment by 1
+If second is greater than 59 but less than 61, second == 00
+Write second to class=second
+
+minute = 00
+While second == 00, minute++
+If minute is greater than 59 but less than 61, minute == 00
+Write minute to class=minute
+
+hour = 12
+while minute is greater than 59 but less than 61 and second is greater than 59 but less than 61,
+
+I am not sure how to cycle through 1 - 12 without an array o iterate through
