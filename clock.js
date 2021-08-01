@@ -22,7 +22,11 @@ if (minutes < 10) {
 
 if (hours > 12) {
     hours = hours - 12;
-    hours = "0" + hours;
+    hours = "0" + hours; // hours is now the result of minus 12 for 12H format with a leading 0 added
+
+    if (hours === 00 ) {
+        hours = 12;
+    }
 }
 
 document.getElementById("time").textContent = `${hours} : ${minutes} : ${seconds}`
