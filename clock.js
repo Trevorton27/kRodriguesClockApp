@@ -1,6 +1,7 @@
 const date = new Date();
 const hourformat = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11"]
 const dayOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+const monthOfYear = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
 let day = date.getDay()
 let month = date.getMonth()
