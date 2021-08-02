@@ -3,15 +3,16 @@
 body {
     margin: 0px;
     padding:0px;
+    background-image: url("wallpaper.jpg");
+    background-size: cover;
 }
 
 .header {
     /* border-color: black;
     border-style: dashed; */
-    padding: 1em;
-    margin: 10px 10px 25px 10px;
-    border-width: 2px;
+    margin: 10px 10px 10px 10px;
     text-align: center;
+    font-size: 2em;
 }
 
 /* Container Styling */
@@ -59,7 +60,7 @@ body {
     grid-column-start: 2;
     grid-column-end: 3;
     padding: 10px 0px 10px 0px;
-    font-size: 2em;
+    font-size: 5em;
     text-align: center;
 }
 
@@ -71,8 +72,7 @@ body {
     grid-column-start: 2;
     grid-column-end: 3;
     padding: 10px 0px 10px 0px;
-    font-size: 2em;
+    font-size: 7em;
     text-align: center;
 }
 
-/* Content Styling */

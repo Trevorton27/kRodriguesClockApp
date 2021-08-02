@@ -15,7 +15,7 @@ let monthName = monthOfYear[date.getMonth()];
 
 let year = date.getFullYear()
 
-document.getElementById("date").textContent = `${monthName} ${day} ${year}`
+document.getElementById("date").textContent = `${monthName} ${day}, ${year}`
 
 // Section for the Time Block
 
