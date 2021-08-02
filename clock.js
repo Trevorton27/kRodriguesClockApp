@@ -42,5 +42,3 @@ if (hours > 12) {
     }
 }
 
-// Here we set up the Conditionals for the Date Block before moving above
-
