@@ -42,17 +42,6 @@ body {
     grid-row-end: 4;
 }
 
-.celldivider {
-    /* border-style: dashed;
-    border-width: 2px; */
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    padding: 2em;
-    margin: 10px 0px 15px 0px;
-}
-
 #date {
     /* border-color: black;
     border-style: dashed; */
