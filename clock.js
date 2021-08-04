@@ -1,41 +1,82 @@
-function clockTick() {
-    const date = new Date();
-    const monthOfYear = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-    const dayOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+function displayClock() {
+  const time = new Date();
 
-    let hours = date.getHours()
-    let minutes = date.getMinutes()
-    let seconds = date.getSeconds()
- 
-    let day = date.getDay()
-    let dayName = dayOfWeek[day];
-    let month = date.getMonth()
-    let monthName = monthOfYear[month];
-    let year = date.getFullYear()
-    
-    document.getElementById("date").textContent = `${dayName}, ${monthName} ${day}, ${year}`;
-
-    if (seconds < 10) {
-        seconds = `${"0" + seconds}`;  
-    }
-    
-    if (minutes < 10) {
-        minutes = `${"0" + minutes}`;  
-    }
-    
-    if (hours > 12) {
-        hours = hours - 12;
-        hours = `${"0" + hours}`;
-    
-        if (hours === 00) {
-            hours = 12;
-        }
-    }
-    
-    document.getElementById("time").textContent = `${hours} : ${minutes} : ${seconds}`;
+  let hours = time.getHours();
+  const minutes = renderLeadingZero(time.getMinutes());
+  const seconds = renderLeadingZero(time.getSeconds());
+  const isAm = hours < 12 || hours === 0;
+  const amPm = isAm ? 'AM' : 'PM';
+  document.getElementById('time').textContent = `${formatHour(
+    hours
+  )} : ${minutes} : ${seconds} ${amPm}`;
 }
 
-setInterval(clockTick, 1000);
+function renderLeadingZero(number) {
+  return number < 10 ? '0' + number : number;
+}
 
+function formatHour(hour) {
+  hour = hour >= 13 ? hour - 12 : hour;
+  hour = hour === 0 ? hour + 12 : hour;
 
+  return hour;
+}
 
+function displayDate() {
+  const date = new Date();
+
+  const day = dayOfWeek[date.getDay()];
+  const date = date.getDate();
+  const month = monthOfYear[date.getMonth()];
+  const year = date.getFullYear();
+
+  document.getElementById(
+    'date'
+  ).textContent = `${dayName}, ${month} ${day}, ${year}`;
+}
+
+function appendDateSuffix(date) {
+  if (date < 10 || date > 20) {
+    switch (date % 10) {
+      case 1:
+        return `${date}st`;
+      case 2:
+        return `${date}nd`;
+      case 3:
+        return `${date}rd`;
+    }
+  }
+  return `${date}th`;
+}
+
+const monthOfYear = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December'
+];
+const dayOfWeek = [
+  'Sunday',
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday'
+];
+
+displayClock();
+displayDate();
+
+setInterval(() => {
+  displayClock();
+  displayDate();
+}, 1000);
